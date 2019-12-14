@@ -1,0 +1,292 @@
+
+
+-----------------------------------------------------------------
+-------------------- Sat 2019-12-14 18:28:25 --------------------
+-----------------------------------------------------------------
+
+
+
+-----------------------------------------------------------------
+-------------------- Sat 2019-12-14 18:31:00 --------------------
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+
+
+Program ID : 0
+Execution Stack :
+[int v; v = 4; while(model.expression.relationalExpression@402a079c) print(v); v = (v - 1); print(v)]
+Symbol Table :
+{}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{}
+
+Program ID : 0
+Execution Stack :
+[v = 4; while(model.expression.relationalExpression@402a079c) print(v); v = (v - 1); print(v), int v]
+Symbol Table :
+{}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{}
+
+Program ID : 0
+Execution Stack :
+[v = 4; while(model.expression.relationalExpression@402a079c) print(v); v = (v - 1); print(v)]
+Symbol Table :
+{v=0}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{}
+
+Program ID : 0
+Execution Stack :
+[while(model.expression.relationalExpression@402a079c) print(v); v = (v - 1); print(v), v = 4]
+Symbol Table :
+{v=0}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{}
+
+Program ID : 0
+Execution Stack :
+[while(model.expression.relationalExpression@402a079c) print(v); v = (v - 1); print(v)]
+Symbol Table :
+{v=4}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{}
+
+Program ID : 0
+Execution Stack :
+[print(v), while(model.expression.relationalExpression@402a079c) print(v); v = (v - 1)]
+Symbol Table :
+{v=4}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{}
+
+Program ID : 0
+Execution Stack :
+[print(v), while(model.expression.relationalExpression@402a079c) print(v); v = (v - 1), print(v); v = (v - 1)]
+Symbol Table :
+{v=4}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{}
+
+Program ID : 0
+Execution Stack :
+[print(v), while(model.expression.relationalExpression@402a079c) print(v); v = (v - 1), v = (v - 1), print(v)]
+Symbol Table :
+{v=4}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{}
+
+Program ID : 0
+Execution Stack :
+[print(v), while(model.expression.relationalExpression@402a079c) print(v); v = (v - 1), v = (v - 1)]
+Symbol Table :
+{v=4}
+Output :
+[4]
+File Table :
+{}
+Heap : 
+{}
+
+Program ID : 0
+Execution Stack :
+[print(v), while(model.expression.relationalExpression@402a079c) print(v); v = (v - 1)]
+Symbol Table :
+{v=3}
+Output :
+[4]
+File Table :
+{}
+Heap : 
+{}
+
+Program ID : 0
+Execution Stack :
+[print(v), while(model.expression.relationalExpression@402a079c) print(v); v = (v - 1), print(v); v = (v - 1)]
+Symbol Table :
+{v=3}
+Output :
+[4]
+File Table :
+{}
+Heap : 
+{}
+
+Program ID : 0
+Execution Stack :
+[print(v), while(model.expression.relationalExpression@402a079c) print(v); v = (v - 1), v = (v - 1), print(v)]
+Symbol Table :
+{v=3}
+Output :
+[4]
+File Table :
+{}
+Heap : 
+{}
+
+Program ID : 0
+Execution Stack :
+[print(v), while(model.expression.relationalExpression@402a079c) print(v); v = (v - 1), v = (v - 1)]
+Symbol Table :
+{v=3}
+Output :
+[4, 3]
+File Table :
+{}
+Heap : 
+{}
+
+Program ID : 0
+Execution Stack :
+[print(v), while(model.expression.relationalExpression@402a079c) print(v); v = (v - 1)]
+Symbol Table :
+{v=2}
+Output :
+[4, 3]
+File Table :
+{}
+Heap : 
+{}
+
+Program ID : 0
+Execution Stack :
+[print(v), while(model.expression.relationalExpression@402a079c) print(v); v = (v - 1), print(v); v = (v - 1)]
+Symbol Table :
+{v=2}
+Output :
+[4, 3]
+File Table :
+{}
+Heap : 
+{}
+
+Program ID : 0
+Execution Stack :
+[print(v), while(model.expression.relationalExpression@402a079c) print(v); v = (v - 1), v = (v - 1), print(v)]
+Symbol Table :
+{v=2}
+Output :
+[4, 3]
+File Table :
+{}
+Heap : 
+{}
+
+Program ID : 0
+Execution Stack :
+[print(v), while(model.expression.relationalExpression@402a079c) print(v); v = (v - 1), v = (v - 1)]
+Symbol Table :
+{v=2}
+Output :
+[4, 3, 2]
+File Table :
+{}
+Heap : 
+{}
+
+Program ID : 0
+Execution Stack :
+[print(v), while(model.expression.relationalExpression@402a079c) print(v); v = (v - 1)]
+Symbol Table :
+{v=1}
+Output :
+[4, 3, 2]
+File Table :
+{}
+Heap : 
+{}
+
+Program ID : 0
+Execution Stack :
+[print(v), while(model.expression.relationalExpression@402a079c) print(v); v = (v - 1), print(v); v = (v - 1)]
+Symbol Table :
+{v=1}
+Output :
+[4, 3, 2]
+File Table :
+{}
+Heap : 
+{}
+
+Program ID : 0
+Execution Stack :
+[print(v), while(model.expression.relationalExpression@402a079c) print(v); v = (v - 1), v = (v - 1), print(v)]
+Symbol Table :
+{v=1}
+Output :
+[4, 3, 2]
+File Table :
+{}
+Heap : 
+{}
+
+Program ID : 0
+Execution Stack :
+[print(v), while(model.expression.relationalExpression@402a079c) print(v); v = (v - 1), v = (v - 1)]
+Symbol Table :
+{v=1}
+Output :
+[4, 3, 2, 1]
+File Table :
+{}
+Heap : 
+{}
+
+Program ID : 0
+Execution Stack :
+[print(v), while(model.expression.relationalExpression@402a079c) print(v); v = (v - 1)]
+Symbol Table :
+{v=0}
+Output :
+[4, 3, 2, 1]
+File Table :
+{}
+Heap : 
+{}
+
+Program ID : 0
+Execution Stack :
+[print(v)]
+Symbol Table :
+{v=0}
+Output :
+[4, 3, 2, 1]
+File Table :
+{}
+Heap : 
+{}
+

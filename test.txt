@@ -1,0 +1,569 @@
+
+
+-----------------------------------------------------------------
+--------------------Tue 2019-11-12 09:12:27--------------------
+-----------------------------------------------------------------
+
+Execution Stack :
+[(string varf; (varf = test.in; (openFile(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))))))]
+Symbol Table :
+{}
+Output :
+[]
+File Table :
+{}
+
+Execution Stack :
+[(varf = test.in; (openFile(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))))), string varf]
+Symbol Table :
+{}
+Output :
+[]
+File Table :
+{}
+
+Execution Stack :
+[(varf = test.in; (openFile(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf))))))))]
+Symbol Table :
+{varf=}
+Output :
+[]
+File Table :
+{}
+
+Execution Stack :
+[(openFile(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf))))))), varf = test.in]
+Symbol Table :
+{varf=}
+Output :
+[]
+File Table :
+{}
+
+Execution Stack :
+[(openFile(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))))]
+Symbol Table :
+{varf=test.in}
+Output :
+[]
+File Table :
+{}
+
+Execution Stack :
+[(int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))), openFile(varf)]
+Symbol Table :
+{varf=test.in}
+Output :
+[]
+File Table :
+{}
+
+Execution Stack :
+[(int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf))))))]
+Symbol Table :
+{varf=test.in}
+Output :
+[]
+File Table :
+{test.in=java.io.BufferedReader@6e1ec318}
+
+Execution Stack :
+[(readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf))))), int varc]
+Symbol Table :
+{varf=test.in}
+Output :
+[]
+File Table :
+{test.in=java.io.BufferedReader@6e1ec318}
+
+Execution Stack :
+[(readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))]
+Symbol Table :
+{varf=test.in, varc=0}
+Output :
+[]
+File Table :
+{test.in=java.io.BufferedReader@6e1ec318}
+
+Execution Stack :
+[(print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))), readFile(varf, varc)]
+Symbol Table :
+{varf=test.in, varc=0}
+Output :
+[]
+File Table :
+{test.in=java.io.BufferedReader@6e1ec318}
+
+Execution Stack :
+[(print(varc); (readFile(varf, varc); (print(varc); closeFile(varf))))]
+Symbol Table :
+{varf=test.in, varc=15}
+Output :
+[]
+File Table :
+{test.in=java.io.BufferedReader@6e1ec318}
+
+Execution Stack :
+[(readFile(varf, varc); (print(varc); closeFile(varf))), print(varc)]
+Symbol Table :
+{varf=test.in, varc=15}
+Output :
+[]
+File Table :
+{test.in=java.io.BufferedReader@6e1ec318}
+
+Execution Stack :
+[(readFile(varf, varc); (print(varc); closeFile(varf)))]
+Symbol Table :
+{varf=test.in, varc=15}
+Output :
+[15]
+File Table :
+{test.in=java.io.BufferedReader@6e1ec318}
+
+Execution Stack :
+[(print(varc); closeFile(varf)), readFile(varf, varc)]
+Symbol Table :
+{varf=test.in, varc=15}
+Output :
+[15]
+File Table :
+{test.in=java.io.BufferedReader@6e1ec318}
+
+Execution Stack :
+[(print(varc); closeFile(varf))]
+Symbol Table :
+{varf=test.in, varc=4}
+Output :
+[15]
+File Table :
+{test.in=java.io.BufferedReader@6e1ec318}
+
+Execution Stack :
+[closeFile(varf), print(varc)]
+Symbol Table :
+{varf=test.in, varc=4}
+Output :
+[15]
+File Table :
+{test.in=java.io.BufferedReader@6e1ec318}
+
+Execution Stack :
+[closeFile(varf)]
+Symbol Table :
+{varf=test.in, varc=4}
+Output :
+[15, 4]
+File Table :
+{test.in=java.io.BufferedReader@6e1ec318}
+
+Execution Stack :
+[]
+Symbol Table :
+{varf=test.in, varc=4}
+Output :
+[15, 4]
+File Table :
+{}
+
+
+
+-----------------------------------------------------------------
+-------------------- Tue 2019-11-12 09:13:01 --------------------
+-----------------------------------------------------------------
+
+Execution Stack :
+[(int v; (v = 2; print(v)))]
+Symbol Table :
+{}
+Output :
+[]
+File Table :
+{}
+
+Execution Stack :
+[(v = 2; print(v)), int v]
+Symbol Table :
+{}
+Output :
+[]
+File Table :
+{}
+
+Execution Stack :
+[(v = 2; print(v))]
+Symbol Table :
+{v=0}
+Output :
+[]
+File Table :
+{}
+
+Execution Stack :
+[print(v), v = 2]
+Symbol Table :
+{v=0}
+Output :
+[]
+File Table :
+{}
+
+Execution Stack :
+[print(v)]
+Symbol Table :
+{v=2}
+Output :
+[]
+File Table :
+{}
+
+Execution Stack :
+[]
+Symbol Table :
+{v=2}
+Output :
+[2]
+File Table :
+{}
+
+
+
+-----------------------------------------------------------------
+-------------------- Mon 2019-11-18 19:13:03 --------------------
+-----------------------------------------------------------------
+
+
+
+-----------------------------------------------------------------
+-------------------- Mon 2019-11-18 19:14:52 --------------------
+-----------------------------------------------------------------
+
+Execution Stack :
+[(string varf; (varf = test.in; (openFile(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))))))]
+Symbol Table :
+{}
+Output :
+[]
+File Table :
+{}
+
+Execution Stack :
+[(varf = test.in; (openFile(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))))), string varf]
+Symbol Table :
+{}
+Output :
+[]
+File Table :
+{}
+
+Execution Stack :
+[(varf = test.in; (openFile(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf))))))))]
+Symbol Table :
+{varf=}
+Output :
+[]
+File Table :
+{}
+
+Execution Stack :
+[(openFile(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf))))))), varf = test.in]
+Symbol Table :
+{varf=}
+Output :
+[]
+File Table :
+{}
+
+Execution Stack :
+[(openFile(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))))]
+Symbol Table :
+{varf=test.in}
+Output :
+[]
+File Table :
+{}
+
+Execution Stack :
+[(int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))), openFile(varf)]
+Symbol Table :
+{varf=test.in}
+Output :
+[]
+File Table :
+{}
+
+Execution Stack :
+[(int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf))))))]
+Symbol Table :
+{varf=test.in}
+Output :
+[]
+File Table :
+{test.in=java.io.BufferedReader@2038ae61}
+
+Execution Stack :
+[(readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf))))), int varc]
+Symbol Table :
+{varf=test.in}
+Output :
+[]
+File Table :
+{test.in=java.io.BufferedReader@2038ae61}
+
+Execution Stack :
+[(readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))]
+Symbol Table :
+{varf=test.in, varc=0}
+Output :
+[]
+File Table :
+{test.in=java.io.BufferedReader@2038ae61}
+
+Execution Stack :
+[(print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))), readFile(varf, varc)]
+Symbol Table :
+{varf=test.in, varc=0}
+Output :
+[]
+File Table :
+{test.in=java.io.BufferedReader@2038ae61}
+
+Execution Stack :
+[(print(varc); (readFile(varf, varc); (print(varc); closeFile(varf))))]
+Symbol Table :
+{varf=test.in, varc=15}
+Output :
+[]
+File Table :
+{test.in=java.io.BufferedReader@2038ae61}
+
+Execution Stack :
+[(readFile(varf, varc); (print(varc); closeFile(varf))), print(varc)]
+Symbol Table :
+{varf=test.in, varc=15}
+Output :
+[]
+File Table :
+{test.in=java.io.BufferedReader@2038ae61}
+
+Execution Stack :
+[(readFile(varf, varc); (print(varc); closeFile(varf)))]
+Symbol Table :
+{varf=test.in, varc=15}
+Output :
+[15]
+File Table :
+{test.in=java.io.BufferedReader@2038ae61}
+
+Execution Stack :
+[(print(varc); closeFile(varf)), readFile(varf, varc)]
+Symbol Table :
+{varf=test.in, varc=15}
+Output :
+[15]
+File Table :
+{test.in=java.io.BufferedReader@2038ae61}
+
+Execution Stack :
+[(print(varc); closeFile(varf))]
+Symbol Table :
+{varf=test.in, varc=4}
+Output :
+[15]
+File Table :
+{test.in=java.io.BufferedReader@2038ae61}
+
+Execution Stack :
+[closeFile(varf), print(varc)]
+Symbol Table :
+{varf=test.in, varc=4}
+Output :
+[15]
+File Table :
+{test.in=java.io.BufferedReader@2038ae61}
+
+Execution Stack :
+[closeFile(varf)]
+Symbol Table :
+{varf=test.in, varc=4}
+Output :
+[15, 4]
+File Table :
+{test.in=java.io.BufferedReader@2038ae61}
+
+Execution Stack :
+[]
+Symbol Table :
+{varf=test.in, varc=4}
+Output :
+[15, 4]
+File Table :
+{}
+
+
+
+-----------------------------------------------------------------
+-------------------- Mon 2019-11-18 19:24:05 --------------------
+-----------------------------------------------------------------
+
+Execution Stack :
+[(string varf; (varf = test.in; (openFile(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))))))]
+Symbol Table :
+{}
+Output :
+[]
+File Table :
+{}
+
+Execution Stack :
+[(varf = test.in; (openFile(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))))), string varf]
+Symbol Table :
+{}
+Output :
+[]
+File Table :
+{}
+
+Execution Stack :
+[(varf = test.in; (openFile(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf))))))))]
+Symbol Table :
+{varf=}
+Output :
+[]
+File Table :
+{}
+
+Execution Stack :
+[(openFile(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf))))))), varf = test.in]
+Symbol Table :
+{varf=}
+Output :
+[]
+File Table :
+{}
+
+Execution Stack :
+[(openFile(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))))]
+Symbol Table :
+{varf=test.in}
+Output :
+[]
+File Table :
+{}
+
+Execution Stack :
+[(int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))), openFile(varf)]
+Symbol Table :
+{varf=test.in}
+Output :
+[]
+File Table :
+{}
+
+Execution Stack :
+[(int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf))))))]
+Symbol Table :
+{varf=test.in}
+Output :
+[]
+File Table :
+{test.in=java.io.BufferedReader@2038ae61}
+
+Execution Stack :
+[(readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf))))), int varc]
+Symbol Table :
+{varf=test.in}
+Output :
+[]
+File Table :
+{test.in=java.io.BufferedReader@2038ae61}
+
+Execution Stack :
+[(readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))]
+Symbol Table :
+{varf=test.in, varc=0}
+Output :
+[]
+File Table :
+{test.in=java.io.BufferedReader@2038ae61}
+
+Execution Stack :
+[(print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))), readFile(varf, varc)]
+Symbol Table :
+{varf=test.in, varc=0}
+Output :
+[]
+File Table :
+{test.in=java.io.BufferedReader@2038ae61}
+
+Execution Stack :
+[(print(varc); (readFile(varf, varc); (print(varc); closeFile(varf))))]
+Symbol Table :
+{varf=test.in, varc=15}
+Output :
+[]
+File Table :
+{test.in=java.io.BufferedReader@2038ae61}
+
+Execution Stack :
+[(readFile(varf, varc); (print(varc); closeFile(varf))), print(varc)]
+Symbol Table :
+{varf=test.in, varc=15}
+Output :
+[]
+File Table :
+{test.in=java.io.BufferedReader@2038ae61}
+
+Execution Stack :
+[(readFile(varf, varc); (print(varc); closeFile(varf)))]
+Symbol Table :
+{varf=test.in, varc=15}
+Output :
+[15]
+File Table :
+{test.in=java.io.BufferedReader@2038ae61}
+
+Execution Stack :
+[(print(varc); closeFile(varf)), readFile(varf, varc)]
+Symbol Table :
+{varf=test.in, varc=15}
+Output :
+[15]
+File Table :
+{test.in=java.io.BufferedReader@2038ae61}
+
+Execution Stack :
+[(print(varc); closeFile(varf))]
+Symbol Table :
+{varf=test.in, varc=4}
+Output :
+[15]
+File Table :
+{test.in=java.io.BufferedReader@2038ae61}
+
+Execution Stack :
+[closeFile(varf), print(varc)]
+Symbol Table :
+{varf=test.in, varc=4}
+Output :
+[15]
+File Table :
+{test.in=java.io.BufferedReader@2038ae61}
+
+Execution Stack :
+[closeFile(varf)]
+Symbol Table :
+{varf=test.in, varc=4}
+Output :
+[15, 4]
+File Table :
+{test.in=java.io.BufferedReader@2038ae61}
+
+Execution Stack :
+[]
+Symbol Table :
+{varf=test.in, varc=4}
+Output :
+[15, 4]
+File Table :
+{}

@@ -1,0 +1,851 @@
+
+
+-----------------------------------------------------------------
+-------------------- Mon 2019-11-25 18:55:01 --------------------
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+
+
+Execution Stack :
+[ref(int) v; new v = 20; ref(ref(int)) a; new a = v; print(v); print(a)]
+Symbol Table :
+{}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[new v = 20; ref(ref(int)) a; new a = v; print(v); print(a), ref(int) v]
+Symbol Table :
+{}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[new v = 20; ref(ref(int)) a; new a = v; print(v); print(a)]
+Symbol Table :
+{v=(0, int)}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[ref(ref(int)) a; new a = v; print(v); print(a), new v = 20]
+Symbol Table :
+{v=(0, int)}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[ref(ref(int)) a; new a = v; print(v); print(a)]
+Symbol Table :
+{v=(1, int)}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{1=20}
+
+Execution Stack :
+[new a = v; print(v); print(a), ref(ref(int)) a]
+Symbol Table :
+{v=(1, int)}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{1=20}
+
+Execution Stack :
+[new a = v; print(v); print(a)]
+Symbol Table :
+{a=(0, ref(int)), v=(1, int)}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{1=20}
+
+Execution Stack :
+[print(v); print(a), new a = v]
+Symbol Table :
+{a=(0, ref(int)), v=(1, int)}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{1=20}
+
+Execution Stack :
+[print(v); print(a)]
+Symbol Table :
+{a=(2, ref(int)), v=(1, int)}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{1=20, 2=(1, int)}
+
+Execution Stack :
+[print(a), print(v)]
+Symbol Table :
+{a=(2, ref(int)), v=(1, int)}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{1=20, 2=(1, int)}
+
+Execution Stack :
+[print(a)]
+Symbol Table :
+{a=(2, ref(int)), v=(1, int)}
+Output :
+[(1, int)]
+File Table :
+{}
+Heap : 
+{1=20, 2=(1, int)}
+
+Execution Stack :
+[]
+Symbol Table :
+{a=(2, ref(int)), v=(1, int)}
+Output :
+[(1, int), (2, ref(int))]
+File Table :
+{}
+Heap : 
+{1=20, 2=(1, int)}
+
+Execution Stack :
+[]
+Symbol Table :
+{a=(2, ref(int)), v=(1, int)}
+Output :
+[(1, int), (2, ref(int))]
+File Table :
+{}
+Heap : 
+{1=20, 2=(1, int)}
+
+
+-----------------------------------------------------------------
+
+
+Execution Stack :
+[ref(int) v; new v = 20; ref(ref(int)) a; new a = v; print(readHeap(v)); print((readHeap(readHeap(a)) + 5))]
+Symbol Table :
+{}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[new v = 20; ref(ref(int)) a; new a = v; print(readHeap(v)); print((readHeap(readHeap(a)) + 5)), ref(int) v]
+Symbol Table :
+{}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[new v = 20; ref(ref(int)) a; new a = v; print(readHeap(v)); print((readHeap(readHeap(a)) + 5))]
+Symbol Table :
+{v=(0, int)}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[ref(ref(int)) a; new a = v; print(readHeap(v)); print((readHeap(readHeap(a)) + 5)), new v = 20]
+Symbol Table :
+{v=(0, int)}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[ref(ref(int)) a; new a = v; print(readHeap(v)); print((readHeap(readHeap(a)) + 5))]
+Symbol Table :
+{v=(1, int)}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{1=20}
+
+Execution Stack :
+[new a = v; print(readHeap(v)); print((readHeap(readHeap(a)) + 5)), ref(ref(int)) a]
+Symbol Table :
+{v=(1, int)}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{1=20}
+
+Execution Stack :
+[new a = v; print(readHeap(v)); print((readHeap(readHeap(a)) + 5))]
+Symbol Table :
+{a=(0, ref(int)), v=(1, int)}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{1=20}
+
+Execution Stack :
+[print(readHeap(v)); print((readHeap(readHeap(a)) + 5)), new a = v]
+Symbol Table :
+{a=(0, ref(int)), v=(1, int)}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{1=20}
+
+Execution Stack :
+[print(readHeap(v)); print((readHeap(readHeap(a)) + 5))]
+Symbol Table :
+{a=(2, ref(int)), v=(1, int)}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{1=20, 2=(1, int)}
+
+Execution Stack :
+[print((readHeap(readHeap(a)) + 5)), print(readHeap(v))]
+Symbol Table :
+{a=(2, ref(int)), v=(1, int)}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{1=20, 2=(1, int)}
+
+Execution Stack :
+[print((readHeap(readHeap(a)) + 5))]
+Symbol Table :
+{a=(2, ref(int)), v=(1, int)}
+Output :
+[20]
+File Table :
+{}
+Heap : 
+{1=20, 2=(1, int)}
+
+Execution Stack :
+[]
+Symbol Table :
+{a=(2, ref(int)), v=(1, int)}
+Output :
+[20, 25]
+File Table :
+{}
+Heap : 
+{1=20, 2=(1, int)}
+
+Execution Stack :
+[]
+Symbol Table :
+{a=(2, ref(int)), v=(1, int)}
+Output :
+[20, 25]
+File Table :
+{}
+Heap : 
+{1=20, 2=(1, int)}
+
+
+-----------------------------------------------------------------
+
+
+Execution Stack :
+[ref(int) v; new v = 20; print(readHeap(v)); writeHeap(30); print((readHeap(v) + 5))]
+Symbol Table :
+{}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[new v = 20; print(readHeap(v)); writeHeap(30); print((readHeap(v) + 5)), ref(int) v]
+Symbol Table :
+{}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[new v = 20; print(readHeap(v)); writeHeap(30); print((readHeap(v) + 5))]
+Symbol Table :
+{v=(0, int)}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[print(readHeap(v)); writeHeap(30); print((readHeap(v) + 5)), new v = 20]
+Symbol Table :
+{v=(0, int)}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[print(readHeap(v)); writeHeap(30); print((readHeap(v) + 5))]
+Symbol Table :
+{v=(1, int)}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{1=20}
+
+Execution Stack :
+[writeHeap(30); print((readHeap(v) + 5)), print(readHeap(v))]
+Symbol Table :
+{v=(1, int)}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{1=20}
+
+Execution Stack :
+[writeHeap(30); print((readHeap(v) + 5))]
+Symbol Table :
+{v=(1, int)}
+Output :
+[20]
+File Table :
+{}
+Heap : 
+{1=20}
+
+Execution Stack :
+[print((readHeap(v) + 5)), writeHeap(30)]
+Symbol Table :
+{v=(1, int)}
+Output :
+[20]
+File Table :
+{}
+Heap : 
+{1=20}
+
+Execution Stack :
+[print((readHeap(v) + 5))]
+Symbol Table :
+{v=(1, int)}
+Output :
+[20]
+File Table :
+{}
+Heap : 
+{1=30}
+
+Execution Stack :
+[]
+Symbol Table :
+{v=(1, int)}
+Output :
+[20, 35]
+File Table :
+{}
+Heap : 
+{1=30}
+
+Execution Stack :
+[]
+Symbol Table :
+{v=(1, int)}
+Output :
+[20, 35]
+File Table :
+{}
+Heap : 
+{1=30}
+
+
+-----------------------------------------------------------------
+
+
+Execution Stack :
+[ref(int) v; new v = 20; ref(ref(int)) a; new a = v; new v = 30; print(readHeap(readHeap(a)))]
+Symbol Table :
+{}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[new v = 20; ref(ref(int)) a; new a = v; new v = 30; print(readHeap(readHeap(a))), ref(int) v]
+Symbol Table :
+{}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[new v = 20; ref(ref(int)) a; new a = v; new v = 30; print(readHeap(readHeap(a)))]
+Symbol Table :
+{v=(0, int)}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[ref(ref(int)) a; new a = v; new v = 30; print(readHeap(readHeap(a))), new v = 20]
+Symbol Table :
+{v=(0, int)}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[ref(ref(int)) a; new a = v; new v = 30; print(readHeap(readHeap(a)))]
+Symbol Table :
+{v=(1, int)}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{1=20}
+
+Execution Stack :
+[new a = v; new v = 30; print(readHeap(readHeap(a))), ref(ref(int)) a]
+Symbol Table :
+{v=(1, int)}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{1=20}
+
+Execution Stack :
+[new a = v; new v = 30; print(readHeap(readHeap(a)))]
+Symbol Table :
+{a=(0, ref(int)), v=(1, int)}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{1=20}
+
+Execution Stack :
+[new v = 30; print(readHeap(readHeap(a))), new a = v]
+Symbol Table :
+{a=(0, ref(int)), v=(1, int)}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{1=20}
+
+Execution Stack :
+[new v = 30; print(readHeap(readHeap(a)))]
+Symbol Table :
+{a=(2, ref(int)), v=(1, int)}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{1=20, 2=(1, int)}
+
+Execution Stack :
+[print(readHeap(readHeap(a))), new v = 30]
+Symbol Table :
+{a=(2, ref(int)), v=(1, int)}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{1=20, 2=(1, int)}
+
+Execution Stack :
+[print(readHeap(readHeap(a)))]
+Symbol Table :
+{a=(2, ref(int)), v=(3, int)}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{1=20, 2=(1, int), 3=30}
+
+Execution Stack :
+[]
+Symbol Table :
+{a=(2, ref(int)), v=(3, int)}
+Output :
+[20]
+File Table :
+{}
+Heap : 
+{1=20, 2=(1, int), 3=30}
+
+Execution Stack :
+[]
+Symbol Table :
+{a=(2, ref(int)), v=(3, int)}
+Output :
+[20]
+File Table :
+{}
+Heap : 
+{1=20, 2=(1, int), 3=30}
+
+
+-----------------------------------------------------------------
+
+
+Execution Stack :
+[int v; v = 4; while(model.expression.relationalExpression@610694f1) print(v); v = (v - 1); print(v)]
+Symbol Table :
+{}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[v = 4; while(model.expression.relationalExpression@610694f1) print(v); v = (v - 1); print(v), int v]
+Symbol Table :
+{}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[v = 4; while(model.expression.relationalExpression@610694f1) print(v); v = (v - 1); print(v)]
+Symbol Table :
+{v=0}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[while(model.expression.relationalExpression@610694f1) print(v); v = (v - 1); print(v), v = 4]
+Symbol Table :
+{v=0}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[while(model.expression.relationalExpression@610694f1) print(v); v = (v - 1); print(v)]
+Symbol Table :
+{v=4}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[print(v), while(model.expression.relationalExpression@610694f1) print(v); v = (v - 1)]
+Symbol Table :
+{v=4}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[print(v), while(model.expression.relationalExpression@610694f1) print(v); v = (v - 1), print(v); v = (v - 1)]
+Symbol Table :
+{v=4}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[print(v), while(model.expression.relationalExpression@610694f1) print(v); v = (v - 1), v = (v - 1), print(v)]
+Symbol Table :
+{v=4}
+Output :
+[]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[print(v), while(model.expression.relationalExpression@610694f1) print(v); v = (v - 1), v = (v - 1)]
+Symbol Table :
+{v=4}
+Output :
+[4]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[print(v), while(model.expression.relationalExpression@610694f1) print(v); v = (v - 1)]
+Symbol Table :
+{v=3}
+Output :
+[4]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[print(v), while(model.expression.relationalExpression@610694f1) print(v); v = (v - 1), print(v); v = (v - 1)]
+Symbol Table :
+{v=3}
+Output :
+[4]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[print(v), while(model.expression.relationalExpression@610694f1) print(v); v = (v - 1), v = (v - 1), print(v)]
+Symbol Table :
+{v=3}
+Output :
+[4]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[print(v), while(model.expression.relationalExpression@610694f1) print(v); v = (v - 1), v = (v - 1)]
+Symbol Table :
+{v=3}
+Output :
+[4, 3]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[print(v), while(model.expression.relationalExpression@610694f1) print(v); v = (v - 1)]
+Symbol Table :
+{v=2}
+Output :
+[4, 3]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[print(v), while(model.expression.relationalExpression@610694f1) print(v); v = (v - 1), print(v); v = (v - 1)]
+Symbol Table :
+{v=2}
+Output :
+[4, 3]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[print(v), while(model.expression.relationalExpression@610694f1) print(v); v = (v - 1), v = (v - 1), print(v)]
+Symbol Table :
+{v=2}
+Output :
+[4, 3]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[print(v), while(model.expression.relationalExpression@610694f1) print(v); v = (v - 1), v = (v - 1)]
+Symbol Table :
+{v=2}
+Output :
+[4, 3, 2]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[print(v), while(model.expression.relationalExpression@610694f1) print(v); v = (v - 1)]
+Symbol Table :
+{v=1}
+Output :
+[4, 3, 2]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[print(v), while(model.expression.relationalExpression@610694f1) print(v); v = (v - 1), print(v); v = (v - 1)]
+Symbol Table :
+{v=1}
+Output :
+[4, 3, 2]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[print(v), while(model.expression.relationalExpression@610694f1) print(v); v = (v - 1), v = (v - 1), print(v)]
+Symbol Table :
+{v=1}
+Output :
+[4, 3, 2]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[print(v), while(model.expression.relationalExpression@610694f1) print(v); v = (v - 1), v = (v - 1)]
+Symbol Table :
+{v=1}
+Output :
+[4, 3, 2, 1]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[print(v), while(model.expression.relationalExpression@610694f1) print(v); v = (v - 1)]
+Symbol Table :
+{v=0}
+Output :
+[4, 3, 2, 1]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[print(v)]
+Symbol Table :
+{v=0}
+Output :
+[4, 3, 2, 1]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[]
+Symbol Table :
+{v=0}
+Output :
+[4, 3, 2, 1, 0]
+File Table :
+{}
+Heap : 
+{}
+
+Execution Stack :
+[]
+Symbol Table :
+{v=0}
+Output :
+[4, 3, 2, 1, 0]
+File Table :
+{}
+Heap : 
+{}
+
