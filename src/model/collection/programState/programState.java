@@ -11,12 +11,13 @@ import model.statement.Statement;
 import model.value.Value;
 
 import java.io.BufferedReader;
+import java.util.concurrent.atomic.AtomicInteger;
 
 
 public class programState {
     private int heapIndex;
     private int thisID;
-    private static int id = 0;
+    private static AtomicInteger id = new AtomicInteger(0);
 
     private stackInterface<Statement> executionStack;
     private mapInterface<String, Value> symbolTable;
@@ -37,8 +38,7 @@ public class programState {
 
         this.originalProgram = originalProgram.copy();
         executionStack.push(this.originalProgram);
-        this.thisID = this.id;
-        this.id += 1;
+        this.thisID = this.id.getAndIncrement();
     }
 
     public programState(stackInterface<Statement> executionStack,
@@ -57,8 +57,7 @@ public class programState {
 
         this.originalProgram = originalProgram.copy();
         executionStack.push(this.originalProgram);
-        this.thisID = this.id;
-        this.id += 1;
+        this.thisID = this.id.getAndIncrement();
     }
 
     public String toString() {

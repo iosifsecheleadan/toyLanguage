@@ -2,18 +2,20 @@ package model.collection.list;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 import exception.exception;
 
 public class list<Type> implements listInterface<Type> {
-    private ArrayList<Type> list;
+    private CopyOnWriteArrayList<Type> list;
+    //private ArrayList ArrayList<Type> list;
 
-    public list(ArrayList<Type> newList){
+    public list(CopyOnWriteArrayList<Type> newList){
         this.list = newList;
     }
 
     public list() {
-        this.list = new ArrayList<Type>();
+        this.list = new CopyOnWriteArrayList<Type>();
     }
 
     @Override
@@ -29,24 +31,24 @@ public class list<Type> implements listInterface<Type> {
     @Override
     public listInterface<Type> sublist(int fromIndex, int toIndex) throws exception{
         if (fromIndex > 0 && toIndex < this.list.size()) {
-            return new list<Type>((ArrayList<Type>) this.list.subList(fromIndex, toIndex));
+            return new list<Type>((CopyOnWriteArrayList<Type>) this.list.subList(fromIndex, toIndex));
         } else throw new exception ("index out of bounds");
     }
 
     @Override
-    public void insert(Type element, int index) {
+    public synchronized void insert(Type element, int index) {
         this.list.add(index, element);
     }
 
     @Override
-    public void remove(Type element) throws exception {
+    public synchronized void remove(Type element) throws exception {
         if (this.list.contains(element)) {
             this.list.remove(element);
         } else throw new exception (element + " not in list");
     }
 
     @Override
-    public void remove(int index) throws exception {
+    public synchronized void remove(int index) throws exception {
         if (index < this.list.size()) {
             this.remove(index);
         } else throw new exception ("index out of bounds");
@@ -65,7 +67,7 @@ public class list<Type> implements listInterface<Type> {
     }
 
     @Override
-    public void append(Type element) {
+    public synchronized void append(Type element) {
         this.list.add(element);
     }
 

@@ -56,7 +56,7 @@ public class textUI implements ui{
         return toReturn;
     }
 
-    public void addCommand(Command command) {
+    private void addCommand(Command command) {
         this.commands.put(command.getKey(), command);
     }
 }
